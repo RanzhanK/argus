@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-class Form extends React.Component {
+class Config extends React.Component {
     render() {
 
         return (
@@ -12,4 +12,4 @@ class Form extends React.Component {
     }
 }
 
-export default Form;
+export default Config;

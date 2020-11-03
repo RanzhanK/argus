@@ -1,13 +1,18 @@
 import React from 'react';
-import '../App.css';
+import Select from 'react-select'
 
 class Config extends React.Component {
-    render() {
+    const
+    options = [
+        {value: 'btc', label: 'BTC'},
+        {value: 'eth', label: 'ETH'},
+        {value: 'ltc', label: 'LTC'},
+        {value: 'rvn', label: 'RVN'},
+    ]
 
+    render() {
         return (
-            <div>
-            test
-            </div>
+            <Select options={this.options} onChange={this.props.gettingMethod}/>
         )
     }
 }
